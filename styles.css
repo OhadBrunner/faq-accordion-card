@@ -1,0 +1,150 @@
+/*
+COLORS:
+  light purple: #A773C3
+  dark purple: #4A0E5C
+  */
+/* RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /*every element will automatically inherit the body's box-sizing*/
+}
+
+html {
+  /* font-size: 10px; /*instead of the deafault browser 16px --> now 1rem = 10px*/
+  font-size: 62.5%;
+  /* equals to 10px if setting are normal but will change according to users needs*/
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.main {
+  height: 100vh;
+  /*must be specified!*/
+  position: relative;
+  background: linear-gradient(to right bottom, #B068E9, #6463E7);
+}
+
+.main__faq {
+  position: absolute;
+  width: 68%;
+  height: 75%;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+}
+
+.main__faq__box {
+  position: absolute;
+  left: -10rem;
+  top: 20rem;
+  z-index: 100;
+}
+
+/* IMAGES BOX */
+.main__images-box {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.images-box__bg-pattern {
+  position: absolute;
+  right: 0;
+  bottom: -14rem;
+}
+
+.images-box__woman {
+  position: absolute;
+  right: 0;
+  top: 6rem;
+}
+
+/* TEXT BOX */
+.main__text-box {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 25px;
+  padding: 6% 12% 10% 0;
+}
+
+.big-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #313848;
+}
+
+.main__faq-boxes {
+  margin-top: 12%;
+}
+
+.main__question-box {
+  margin: 2rem 0 2rem 0;
+  position: relative;
+}
+
+.text-box__line {
+  border: .5px solid #EEEEEE;
+}
+
+.another-box {
+  position: relative;
+}
+
+.question-text {
+  display: inline-block;
+  font-weight: 400;
+  color: #313848;
+  font-size: 1.5rem;
+}
+
+.question-text:hover,
+.question-text:active {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.answer-text {
+  display: none;
+  color: #C9CCD5;
+}
+
+.visible {
+  color: #BBBBBB;
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: block;
+  margin-top: 1rem;
+  margin-right: 5rem;
+}
+
+.arrow {
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.backwards-arrow {
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(180deg);
+}
